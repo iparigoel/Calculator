@@ -4,7 +4,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello from Project 1');
 });
 
-server.listen(3000, '0.0.0.0'() => {
+server.listen(3000, '0.0.0.0', () => {
   console.log('Project 1 is running on port 3000');
 });
 
