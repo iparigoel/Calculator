@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     });
   }
  
-  else if (req.url === '/style.css') {
+  else if (req.url === '/calculator.css') {
     fs.readFile(path.join(__dirname, 'calculator.css'), (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
@@ -27,8 +27,8 @@ const server = http.createServer((req, res) => {
     });
   }
  
-  else if (req.url === '/script.js') {
-    fs.readFile(path.join(__dirname, 'script.js'), (err, data) => {
+  else if (req.url === '/calculator.js') {
+    fs.readFile(path.join(__dirname, 'calculator.js'), (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.end('Error loading the JS file.');
